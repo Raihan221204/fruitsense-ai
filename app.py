@@ -26,10 +26,11 @@ st.markdown("""
     
     .stApp {
         font-family: 'Plus Jakarta Sans', sans-serif;
-        background-color: #f8fcf8;
+        background-color: #0E1117; /* Background utama gelap */
+        color: #FAFAFA; /* Teks utama terang */
     }
     
-    /* Header Segar Organik */
+    /* Header Segar Organik (Tetap dipertahankan karena cocok di dark mode) */
     .main-header {
         text-align: center;
         padding: 2.5rem 1rem;
@@ -37,19 +38,20 @@ st.markdown("""
         border-radius: 24px;
         margin-bottom: 2rem;
         color: white;
-        box-shadow: 0 10px 30px rgba(46, 125, 50, 0.2);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     }
     .main-header h1 { font-size: 2.8rem; font-weight: 700; margin-bottom: 0.5rem; }
     .main-header p { font-size: 1.1rem; opacity: 0.9; }
     
-    /* Card Styles */
+    /* Card Styles (Diubah jadi abu-abu gelap) */
     .custom-card {
-        background: white;
+        background: #1E1E1E; /* Warna card gelap */
         padding: 2rem;
         border-radius: 24px;
-        box-shadow: 0 8px 32px rgba(0,0,0,0.04);
+        box-shadow: 0 8px 32px rgba(0,0,0,0.4);
         margin-bottom: 1.5rem;
-        border: 1px solid #edf2f7;
+        border: 1px solid #333; /* Border disesuaikan */
+        color: #FAFAFA;
     }
     
     /* Label Status */
@@ -66,13 +68,14 @@ st.markdown("""
     .bg-mentah { background: linear-gradient(135deg, #f7971e 0%, #ffd200 100%); }
     .bg-busuk { background: linear-gradient(135deg, #cb2d3e 0%, #ef473a 100%); }
     
-    /* AI Box */
+    /* AI Box (Diubah jadi hijau super gelap agar menyatu dengan dark mode) */
     .ai-advice-box {
-        background: #f1f8f1;
+        background: #1A281A; 
         border-left: 5px solid #43A047;
         padding: 1.5rem;
         border-radius: 0 16px 16px 0;
         margin: 1.5rem 0;
+        color: #E0E0E0;
     }
     
     /* Tombol Utama */
@@ -90,7 +93,12 @@ st.markdown("""
     .stButton > button:hover {
         transform: translateY(-2px);
         box-shadow: 0 8px 25px rgba(67, 160, 71, 0.4);
+        color: white;
     }
+    
+    /* Memastikan input text dan label tetap terlihat jelas di dark mode */
+    h3 { color: #FAFAFA !important; }
+    .stTextInput > div > div > input { color: #FAFAFA; }
     
     /* Hide elemen bawaan */
     #MainMenu {visibility: hidden;}
