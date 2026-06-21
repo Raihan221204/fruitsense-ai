@@ -132,7 +132,7 @@ Berikan analisis singkat dengan format persis seperti ini:
 ### 💡 Tips Penyimpanan
 [Jelaskan cara menyimpan buah ini dengan kondisinya yang sekarang]
 
-### 🍳 Ide Olahan Terbalik
+### 🍳 Ide Olahan Terbaik
 Sebutkan 3 nama olahan spesifik yang sangat cocok untuk kondisi buah ini. (Hanya sebutkan namanya saja dipisah koma, contoh: Smoothie Pisang, Pisang Goreng Keju, Bolu Pisang)"""
 
     completion = client.chat.completions.create(
